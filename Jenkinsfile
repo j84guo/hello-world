@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python3 --version'
+                sh 'python --version'
                 sh 'pwd'
+                sh 'whoami'
                 sh 'echo some console output'
             }
         }
