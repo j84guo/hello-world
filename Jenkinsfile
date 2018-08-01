@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                python --version
-                pwd
-                echo 'some console output...'
+                sh 'python --version'
+                sh 'pwd'
+                sh 'echo some console output'
             }
         }
     }
