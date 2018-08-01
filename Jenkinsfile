@@ -5,6 +5,7 @@ pipeline {
             steps {
                 python --version
                 pwd
+                echo 'some console output...'
             }
         }
     }
